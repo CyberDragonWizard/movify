@@ -1,0 +1,28 @@
+
+
+.center-block {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 105vh;
+}
+
+.search-bar {
+  font-family: 'Palanquin', sans-serif;
+    outline: none;
+    font-size: 20px;
+    height: 35px;
+    width: 15vw;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.search-bar:focus {
+  width: 35vw;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+  }

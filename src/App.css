@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+body {
+  background-image: linear-gradient(to right, #111111 75%,  #585447 100%);
+}
+
+span {
+  color: white;
+  font-size: 25px;
+  font-family: 'Palanquin', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-family: 'Bad Script', cursive;
+  font-size: 125px;
+  letter-spacing: 20px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+h2 {
+  color: white;
+  font-family: 'Palanquin', sans-serif;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 20vh;
+}
+
+h3 {
+  color: white;
+  font-family: 'Palanquin', sans-serif;
+  text-align: center;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffeeb515;
+  color: white;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 15px;
+  list-style-type: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 7px;
+  transition: .3s;
+  width: 15vw;
+}
+
+.arrow {
+  fill: rgb(255, 255, 255);
+  position: absolute;
+  margin-top: 15%;
+  left: 50%;
+  margin-left: -50px;
+  width: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+
+.arrow:hover {
+  transform: rotate(360deg);
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-container {
+  height: 100vh;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin:0 auto;
+  margin-top: 10vh;
+  max-width: 70vw;
+}
+
+.nominations {
+  width: 18vw;
+  position: absolute;
+  left: 2%;
+  top: 115vh;
+}
+
+.nomination-list {
+  margin-left: 10px;
+  width: 15vw;
+  overflow: hidden;
+  transition: .9s
+}
+
+.x-button {
+  float: right;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.x-button:hover {
+  fill: red;
+}
+
+.open-banner {
+  background-color: #423e31;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 7px 12px 7px 12px;
+  font-family: 'Palanquin', sans-serif;
+  color: white;
+  animation: fadeInAnimation ease 1.5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;  
+}
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+}

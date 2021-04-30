@@ -1,0 +1,62 @@
+
+
+.movie-list {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: .3s;
+}
+
+.movie-list:hover {
+    transform: scale(1.02);
+    border: 2px solid #4e4834 ;
+}
+
+.movie-list:hover .overlay {
+    opacity: 1;
+}
+
+
+.overlay {
+    position: absolute;
+    font-family: 'Palanquin', sans-serif;
+    background: #16140fcb;
+    width: 100%;
+    height:100%;
+    opacity: 0;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.images {
+    height: 320px;
+    width: 216px;
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .images {
+        height: 270px;
+        width: 182px;
+    }
+}
+
+button {
+    border: none;
+}
+
+button:disabled,
+button[disabled]{
+  background-color: #666666bb;
+  cursor: pointer;
+}
+
+button:disabled:active {
+    background-color: #850101c2;
+}
+
+
+
