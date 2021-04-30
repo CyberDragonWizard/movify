@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import MovieList from './components/MovieList';
 import NominationList from './components/NominationList';
-import RemoveNomination from './components/RemoveNomination'
-import Header from './components/Header';
+import RemoveNomination from './components/RemoveNomination';
 import Search from './components/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
