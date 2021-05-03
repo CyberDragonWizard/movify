@@ -38,9 +38,13 @@ function App() {
   }
 
   const addNominatedMovie = (movie) => {
-    const newNominationList = [...nominations, movie];
+
+    if (nominations) {
+    let newNominationList = [...nominations, movie];
     setNominations(newNominationList);
     saveToLocalStorage(newNominationList);
+   } else setNominations([]);
+
   }
 
   const removeNominatedMovie = (movie) => {
@@ -54,8 +58,8 @@ function App() {
 	};
 
   const checkForBoth = () => {
-    return (nominations || []).map(o => o.imdbID);
-   
+ return (nominations || []).map(o => o.imdbID);
+
   }
 
 
