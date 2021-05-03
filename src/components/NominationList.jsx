@@ -27,7 +27,7 @@ const NominationList = (props) => {
       </>
       { 
       
-      (props.movies.length <= 4)
+      (props.movies.length <= 4 || props.movies.length === [])
         ? <div></div>
         : <div class='open-banner'> You have reached the minimum number of nominations needed. </div>
         
