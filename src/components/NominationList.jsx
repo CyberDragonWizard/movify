@@ -11,7 +11,7 @@ const NominationList = (props) => {
         <h3>Your Nominations</h3>
       </Fade>
       <>
-        {props.movies.map((movie, index) => (
+        {props.movies.map((movie) => (
           <div>
             <Fade left duration={400}>
               <li>{movie.Title}, {movie.Year}
