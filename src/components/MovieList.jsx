@@ -6,7 +6,7 @@ const MovieList = (props) => {
 
   return (
     <>
-      {(props.movies || []).map((movie, index) => (
+      {(props.movies || []).map((movie) => (
         <Zoom duration={450}>
         <div className='movie-list'>
           <img className='images'
