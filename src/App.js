@@ -54,7 +54,7 @@ function App() {
 	};
 
   const checkForBoth = () => {
-    return nominations.map(o => o.imdbID);
+    return (nominations || []).map(o => o.imdbID);
    
   }
 

@@ -6,7 +6,7 @@ const MovieList = (props) => {
 
   return (
     <>
-      {(props.movies).map((movie) => (
+      {(props.movies || []).map((movie) => (
         <Zoom duration={450}>
         <div className='movie-list'>
           <img className='images'
@@ -15,7 +15,7 @@ const MovieList = (props) => {
           <button
             className='overlay d-flex align-items-center justify-content-center'
             onClick={() => props.handleNominationsClick(movie)}
-            disabled={(props.checkForBoth() || []).includes(movie.imdbID) ? true : false}
+            disabled={(props || []).checkForBoth().includes(movie.imdbID) ? true : false}
           >
             <div>
               <span className='mr-2'>Add '{movie.Title}' to Nominations</span>
