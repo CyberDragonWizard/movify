@@ -55,6 +55,7 @@ button[disabled]{
 }
 
 button:disabled:active {
+    transition: .1s;
     background-color: #850101c2;
 }
 
